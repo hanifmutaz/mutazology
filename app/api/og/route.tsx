@@ -19,7 +19,7 @@ export async function GET(req: Request) {
         style={{
           width: "1200px", height: "630px", display: "flex", flexDirection: "column",
           justifyContent: "space-between", background: "#0a0a0b", color: "#ece9e2",
-          padding: "72px", fontFamily: "serif",
+          padding: "72px", fontFamily: "serif", border: "1px solid #1e1e21",
         }}
       >
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -28,14 +28,14 @@ export async function GET(req: Request) {
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 68, lineHeight: 1.1, letterSpacing: -1, maxWidth: 1000 }}>{title}</div>
+          <div style={{ fontSize: 66, fontWeight: 300, lineHeight: 1.15, letterSpacing: -0.5, maxWidth: 1000 }}>{title}</div>
           {excerpt && (
-            <div style={{ fontSize: 28, color: "#a3a09a", marginTop: 28, maxWidth: 920, lineHeight: 1.4 }}>{excerpt}</div>
+            <div style={{ fontSize: 28, color: "#a3a09a", marginTop: 28, maxWidth: 920, lineHeight: 1.5 }}>{excerpt}</div>
           )}
         </div>
 
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div style={{ fontSize: 22, fontStyle: "italic", color: "#6b6862" }}>the study of a mind in progress.</div>
+          <div style={{ fontSize: 22, fontStyle: "italic", color: "#827e77" }}>the study of a mind in progress.</div>
           <div style={{ fontSize: 22, color: "#c9a86a" }}>— Mutaz</div>
         </div>
       </div>
