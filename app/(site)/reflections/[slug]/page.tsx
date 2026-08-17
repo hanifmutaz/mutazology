@@ -70,7 +70,7 @@ export default async function ReflectionPage({ params }: { params: { slug: strin
           ))}
         </div>
 
-        <ShareBar title={r.title} />
+        <ShareBar title={r.title} excerpt={r.subtitle} kind="Reflection" category={r.category} />
       </article>
     </div>
   );

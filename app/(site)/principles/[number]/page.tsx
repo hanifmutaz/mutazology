@@ -56,7 +56,7 @@ export default async function PrinciplePage({ params }: { params: { number: stri
           ))}
         </div>
 
-        <ShareBar title={`Principle #${p.number}`} />
+        <ShareBar title={`Principle #${p.number}`} excerpt={p.statement} kind="Principle" category={p.category} />
       </article>
     </div>
   );

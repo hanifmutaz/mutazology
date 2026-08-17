@@ -69,7 +69,7 @@ export default async function ThoughtPage({ params }: { params: { slug: string }
           ))}
         </div>
 
-        <ShareBar title={t.title} />
+        <ShareBar title={t.title} excerpt={excerpt(t.body.join(" "), 140)} kind="Thought" category={t.category} />
       </article>
     </div>
   );
