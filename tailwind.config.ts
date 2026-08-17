@@ -12,11 +12,11 @@ const config: Config = {
         "bg-soft": "#0f0f11",
         ink: "#ece9e2",
         "ink-dim": "#a3a09a",
-        "ink-faint": "#6b6862",
+        "ink-faint": "#827e77",
         line: "#1e1e21",
         "line-soft": "#161618",
         accent: "#c9a86a",
-        "accent-dim": "#8a7648",
+        "accent-dim": "#9c8659",
       },
       fontFamily: {
         serif: ["var(--font-serif)", "Georgia", "serif"],

@@ -9,9 +9,9 @@ export default function ThoughtCard({ t }: { t: Thought }) {
       href={`/thoughts/${t.slug}`}
       className="group bg-bg hover:bg-bg-soft transition-colors duration-300 p-8 flex flex-col min-h-[230px]"
     >
-      <div className="text-[10.5px] tracking-[0.2em] uppercase text-accent-dim mb-4">{t.category}</div>
-      <h3 className="font-serif text-[19px] leading-tight mb-3">{t.title}</h3>
-      <p className="text-ink-dim text-[14.5px] leading-relaxed flex-1">{excerpt(t.body.join(" "))}</p>
+      <div className="text-[10.5px] tracking-[0.2em] uppercase text-accent-dim group-hover:text-accent transition-colors mb-4">{t.category}</div>
+      <h3 className="font-serif text-[19px] leading-tight mb-3 line-clamp-2">{t.title}</h3>
+      <p className="text-ink-dim text-[14.5px] leading-relaxed flex-1 line-clamp-3">{excerpt(t.body.join(" "))}</p>
       <div className="flex justify-between items-center mt-[22px] text-[11px] text-ink-faint tracking-[0.05em]">
         <MoodDot mood={t.mood} />
         <span>{formatDate(t.date)}</span>

@@ -48,7 +48,7 @@ export default async function ReflectionPage({ params }: { params: { slug: strin
           {r.category} · <MoodDot mood={r.mood} />
         </div>
 
-        <h1 className="font-serif text-[clamp(34px,6vw,58px)] leading-[1.05] tracking-[-0.02em] mb-5">{r.title}</h1>
+        <h1 className="font-serif font-light text-[clamp(32px,5.5vw,52px)] leading-[1.15] tracking-[-0.005em] mb-5">{r.title}</h1>
         <div className="font-serif italic font-light text-[22px] text-ink-dim mb-[34px]" style={{ marginBottom: "34px" }}>{r.subtitle}</div>
 
         <div className="flex gap-[22px] items-center pb-9 mb-11 border-b border-line text-xs text-ink-faint tracking-[0.05em] flex-wrap" style={{ gap: "22px" }}>

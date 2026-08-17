@@ -40,7 +40,7 @@ export default async function PrinciplePage({ params }: { params: { number: stri
           #{String(p.number).padStart(2, "0")}
         </div>
 
-        <h1 className="font-serif text-[clamp(28px,5vw,46px)] leading-[1.05] tracking-[-0.02em]">{p.statement}</h1>
+        <h1 className="font-serif font-light text-[clamp(28px,4.5vw,42px)] leading-[1.2] tracking-[-0.005em]">{p.statement}</h1>
 
         <div className="flex gap-[22px] items-center text-xs text-ink-faint tracking-[0.05em]" style={{ marginTop: "30px" }}>
           {formatDate(p.date)} <span>·</span> Principle

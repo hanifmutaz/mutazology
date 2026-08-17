@@ -8,7 +8,7 @@ export default function PrincipleRow({ p }: { p: Principle }) {
       href={`/principles/${p.number}`}
       className="group bg-bg hover:bg-bg-soft transition-colors duration-300 px-6 md:px-8 py-7 grid grid-cols-[70px_1fr] md:grid-cols-[120px_1fr] gap-5 md:gap-8 items-center"
     >
-      <div className="font-serif text-3xl md:text-[44px] leading-none text-line group-hover:text-accent-dim transition-colors">
+      <div className="font-serif text-3xl md:text-[44px] leading-none text-accent-dim/25 group-hover:text-accent transition-colors">
         #{String(p.number).padStart(2, "0")}
       </div>
       <div>

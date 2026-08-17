@@ -49,7 +49,7 @@ export default async function ThoughtPage({ params }: { params: { slug: string }
           {t.category} · <MoodDot mood={t.mood} />
         </div>
 
-        <h1 className="font-serif text-[clamp(34px,6vw,58px)] leading-[1.05] tracking-[-0.02em] mb-5">{t.title}</h1>
+        <h1 className="font-serif font-light text-[clamp(32px,5.5vw,52px)] leading-[1.15] tracking-[-0.005em] mb-5">{t.title}</h1>
 
         <div className="flex gap-[22px] items-center pb-9 mb-11 border-b border-line text-xs text-ink-faint tracking-[0.05em] flex-wrap" style={{ gap: "22px" }}>
           {formatDate(t.date)} <span>·</span> {t.views} views <span>·</span> Thought
